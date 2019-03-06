@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestInfoPage">
+    tools:context=".TestPage">
 
     <Button
-        android:id="@+id/testInfoPageBtn"
+        android:id="@+id/testBtn"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -16,41 +16,27 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="76dp"
         android:background="@color/colorPrimary"
-        android:onClick="navigateToTestPage"
-        android:text="@string/begin_test_btn"
+        android:text="@string/test_next_question_btn"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/testInfoDescription"
+        android:id="@+id/testQuestion"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:text="@string/test_info_description"
+        android:text="@string/test_question_placeholder"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testInfoTitle" />
-
-    <TextView
-        android:id="@+id/testInfoTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/test_info_title"
-        android:textColor="@android:color/black"
-        android:textSize="36sp"
-        app:fontFamily="@font/roboto_medium"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

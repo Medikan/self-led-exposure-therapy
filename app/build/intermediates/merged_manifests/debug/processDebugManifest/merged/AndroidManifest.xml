@@ -46,6 +46,7 @@
         <activity android:name="com.example.medikan.ptsd_treatment.TreatmentCompletionPage" />
         <activity android:name="com.example.medikan.ptsd_treatment.MotivationPage" />
         <activity android:name="com.example.medikan.ptsd_treatment.TestInfoPage" />
+        <activity android:name="com.example.medikan.ptsd_treatment.TestPage" />
 
         <meta-data
             android:name="android.support.VERSION"
