@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Self Led Exposure Therapy</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="button_take_test">Take the Test</string>
+    <string name="button_start_treatment">Continue Treatment</string>
+    <string name="treatment_title">Treatment Title</string>
+    <string name="timer_activity_instructions">"Brief description of the activity and some more filler text to give a better idea of what it looks like  "</string>
+    <string name="startCountdownBtnTxt">Start</string>
+    <string name="defaultTimerTxt">00:00</string>
+    <string name="countdownTimerStopBtn">Stop</string>
+    <string name="countdownTimerStartBtn">Start</string>
+    <string name="home_would_you_like_to">Would you like to:</string>
+    <string name="title_activity_treatment_description_page">TreatmentDescriptionPage</string>
+    <string name="treatment_description">In depth description of the treatment, how long, what to do, advice, etc…. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
+    <string name="begin_treatment_btn">Begin Treatment</string>
+    <string name="treatment_completion_page_header">Congratulations!</string>
+    <string name="treatment_completion_page_description">Congrats on completing this treatment, here are next steps, advice, etc... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
+    <string name="back_to_treatments_btn">Back to Treatments</string>
+    <string name="motivational_page_title">Why</string>
+    <string name="motivational_page_description">Don\'t give up! If you stick with it you will Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
+</resources>

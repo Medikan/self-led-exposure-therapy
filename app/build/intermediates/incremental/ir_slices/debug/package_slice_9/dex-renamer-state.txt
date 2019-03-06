@@ -1,0 +1,4 @@
+#Thu Feb 28 14:58:50 MST 2019
+base.0=/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex
