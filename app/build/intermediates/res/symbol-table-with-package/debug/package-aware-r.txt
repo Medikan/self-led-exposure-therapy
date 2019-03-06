@@ -949,9 +949,14 @@ id status_bar_latest_event_content
 id submenuarrow
 id submit_area
 id tabMode
+id testBtn
+id testCompletedBtn
+id testCompletedPageDescription
+id testCompletedPageTitle
 id testInfoDescription
 id testInfoPageBtn
 id testInfoTitle
+id testQuestion
 id text
 id text2
 id textSpacerNoButtons
@@ -1029,6 +1034,7 @@ layout activity_available_treatments_page
 layout activity_display_timer
 layout activity_main
 layout activity_motivation_page
+layout activity_test_completed_page
 layout activity_test_info_page
 layout activity_test_page
 layout activity_treatment_completion_page
@@ -1103,6 +1109,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string back_to_home_btn
 string back_to_treatments_btn
 string begin_test_btn
 string begin_treatment_btn
@@ -1124,8 +1131,12 @@ string path_password_strike_through
 string search_menu_title
 string startCountdownBtnTxt
 string status_bar_notification_info_overflow
+string test_completed_page_description
+string test_completed_page_title
 string test_info_description
 string test_info_title
+string test_next_question_btn
+string test_question_placeholder
 string timer_activity_instructions
 string title_activity_treatment_description_page
 string treatment_completion_page_description

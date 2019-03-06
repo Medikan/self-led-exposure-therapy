@@ -2,13 +2,13 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="FULL"
+    build-mode="HOT_WARM"
     density="420dpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1551901675124"
+    timestamp="1551903515015"
     token="-4136878137902741151"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
@@ -18,55 +18,19 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="583" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3544" />
+        duration="0" />
 
     <artifact
         location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1551901675124"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="1551903387411"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
@@ -77,16 +41,16 @@
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -95,10 +59,10 @@
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -106,6 +70,14 @@
         <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1551903515015"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

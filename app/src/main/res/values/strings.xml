@@ -23,4 +23,7 @@
     <string name="begin_test_btn">Begin Test</string>
     <string name="test_question_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
     <string name="test_next_question_btn">Next Question</string>
+    <string name="test_completed_page_title">All Done!</string>
+    <string name="test_completed_page_description">Good job completing the test! Here\'s some lorem ipsum text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
+    <string name="back_to_home_btn">Back To Home</string>
 </resources>

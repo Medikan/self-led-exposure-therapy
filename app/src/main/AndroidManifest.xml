@@ -39,7 +39,8 @@
         <activity android:name=".TreatmentCompletionPage" />
         <activity android:name=".MotivationPage" />
         <activity android:name=".TestInfoPage" />
-        <activity android:name=".TestPage"></activity>
+        <activity android:name=".TestPage" />
+        <activity android:name=".TestCompletedPage"></activity>
     </application>
 
 </manifest>
