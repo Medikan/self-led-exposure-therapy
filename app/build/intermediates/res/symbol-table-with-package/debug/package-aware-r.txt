@@ -1026,6 +1026,7 @@ layout activity_available_treatments_page
 layout activity_display_timer
 layout activity_main
 layout activity_motivation_page
+layout activity_test_info_page
 layout activity_treatment_completion_page
 layout activity_treatment_description_page
 layout design_bottom_navigation_item

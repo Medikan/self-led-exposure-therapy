@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AvailableTreatmentsPage.class);
         startActivity(intent);
     }
+
+    public void navigateToTestInfoPage(View view) {
+        Intent intent = new Intent(this, TestInfoPage.class);
+        startActivity(intent);
+    }
 }
