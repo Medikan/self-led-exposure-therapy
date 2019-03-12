@@ -18,29 +18,60 @@
         </activity>
         <activity
             android:name=".DisplayTimerActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".TreatmentDescriptionPage">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".TreatmentDescriptionPage" />
         </activity>
         <activity
             android:name=".TreatmentDescriptionPage"
-            android:label="@string/title_activity_treatment_description_page"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AvailableTreatmentsPage" />
+            android:label="@string/title_activity_treatment_description_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AvailableStepsPage" />
+        </activity>
+        <activity android:name=".AvailableTreatmentsPage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".AvailableStepsPage" />
-        <activity android:name=".TreatmentCompletionPage" />
-        <activity android:name=".MotivationPage" />
-        <activity android:name=".TestInfoPage" />
-        <activity android:name=".TestPage" />
-        <activity android:name=".TestCompletedPage"></activity>
+        <activity android:name=".AvailableStepsPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AvailableTreatmentsPage" />
+        </activity>
+        <activity android:name=".TreatmentCompletionPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AvailableStepsPage" />
+        </activity>
+        <activity android:name=".MotivationPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".TestInfoPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".TestPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TestInfoPage" />
+        </activity>
+        <activity android:name=".TestCompletedPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

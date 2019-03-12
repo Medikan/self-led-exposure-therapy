@@ -26,29 +26,60 @@
         </activity>
         <activity
             android:name="com.example.medikan.ptsd_treatment.DisplayTimerActivity"
-            android:parentActivityName="com.example.medikan.ptsd_treatment.MainActivity" >
+            android:parentActivityName="com.example.medikan.ptsd_treatment.TreatmentDescriptionPage" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".TreatmentDescriptionPage" />
         </activity>
         <activity
             android:name="com.example.medikan.ptsd_treatment.TreatmentDescriptionPage"
-            android:label="@string/title_activity_treatment_description_page"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.medikan.ptsd_treatment.AvailableTreatmentsPage" />
+            android:label="@string/title_activity_treatment_description_page" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AvailableStepsPage" />
+        </activity>
+        <activity android:name="com.example.medikan.ptsd_treatment.AvailableTreatmentsPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name="com.example.medikan.ptsd_treatment.AvailableStepsPage" />
-        <activity android:name="com.example.medikan.ptsd_treatment.TreatmentCompletionPage" />
-        <activity android:name="com.example.medikan.ptsd_treatment.MotivationPage" />
-        <activity android:name="com.example.medikan.ptsd_treatment.TestInfoPage" />
-        <activity android:name="com.example.medikan.ptsd_treatment.TestPage" />
-        <activity android:name="com.example.medikan.ptsd_treatment.TestCompletedPage" />
+        <activity android:name="com.example.medikan.ptsd_treatment.AvailableStepsPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AvailableTreatmentsPage" />
+        </activity>
+        <activity android:name="com.example.medikan.ptsd_treatment.TreatmentCompletionPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AvailableStepsPage" />
+        </activity>
+        <activity android:name="com.example.medikan.ptsd_treatment.MotivationPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name="com.example.medikan.ptsd_treatment.TestInfoPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name="com.example.medikan.ptsd_treatment.TestPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TestInfoPage" />
+        </activity>
+        <activity android:name="com.example.medikan.ptsd_treatment.TestCompletedPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"
