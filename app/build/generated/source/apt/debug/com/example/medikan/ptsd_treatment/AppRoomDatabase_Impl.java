@@ -23,19 +23,23 @@ import java.util.HashSet;
 public class AppRoomDatabase_Impl extends AppRoomDatabase {
   private volatile TreatmentDao _treatmentDao;
 
+  private volatile TreatmentStepDao _treatmentStepDao;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `treatment_table` (`mTreatmentID` INTEGER NOT NULL, `treatment` TEXT NOT NULL, `description` TEXT, `isComplete` INTEGER, `isRequired` INTEGER, `priorityLevel` REAL NOT NULL, PRIMARY KEY(`mTreatmentID`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `treatment_step_table` (`mTreatmentStepID` INTEGER NOT NULL, `treatmentStep` TEXT NOT NULL, `description` TEXT, `isComplete` INTEGER, `isRequired` INTEGER, `priorityLevel` REAL NOT NULL, `treatmentID` INTEGER NOT NULL, PRIMARY KEY(`mTreatmentStepID`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"4ce4ea290cbbda6559e5a88f207cf754\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"063b32ebff2b3a28938ab4bd3a23434b\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `treatment_table`");
+        _db.execSQL("DROP TABLE IF EXISTS `treatment_step_table`");
       }
 
       @Override
@@ -76,8 +80,25 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
                   + " Expected:\n" + _infoTreatmentTable + "\n"
                   + " Found:\n" + _existingTreatmentTable);
         }
+        final HashMap<String, TableInfo.Column> _columnsTreatmentStepTable = new HashMap<String, TableInfo.Column>(7);
+        _columnsTreatmentStepTable.put("mTreatmentStepID", new TableInfo.Column("mTreatmentStepID", "INTEGER", true, 1));
+        _columnsTreatmentStepTable.put("treatmentStep", new TableInfo.Column("treatmentStep", "TEXT", true, 0));
+        _columnsTreatmentStepTable.put("description", new TableInfo.Column("description", "TEXT", false, 0));
+        _columnsTreatmentStepTable.put("isComplete", new TableInfo.Column("isComplete", "INTEGER", false, 0));
+        _columnsTreatmentStepTable.put("isRequired", new TableInfo.Column("isRequired", "INTEGER", false, 0));
+        _columnsTreatmentStepTable.put("priorityLevel", new TableInfo.Column("priorityLevel", "REAL", true, 0));
+        _columnsTreatmentStepTable.put("treatmentID", new TableInfo.Column("treatmentID", "INTEGER", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysTreatmentStepTable = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesTreatmentStepTable = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoTreatmentStepTable = new TableInfo("treatment_step_table", _columnsTreatmentStepTable, _foreignKeysTreatmentStepTable, _indicesTreatmentStepTable);
+        final TableInfo _existingTreatmentStepTable = TableInfo.read(_db, "treatment_step_table");
+        if (! _infoTreatmentStepTable.equals(_existingTreatmentStepTable)) {
+          throw new IllegalStateException("Migration didn't properly handle treatment_step_table(com.example.medikan.ptsd_treatment.TreatmentStep).\n"
+                  + " Expected:\n" + _infoTreatmentStepTable + "\n"
+                  + " Found:\n" + _existingTreatmentStepTable);
+        }
       }
-    }, "4ce4ea290cbbda6559e5a88f207cf754", "3936e0f972610035e414c1c5527f645b");
+    }, "063b32ebff2b3a28938ab4bd3a23434b", "32c7404f05a8c8076619a00da92e9258");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -88,7 +109,7 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "treatment_table");
+    return new InvalidationTracker(this, "treatment_table","treatment_step_table");
   }
 
   @Override
@@ -98,6 +119,7 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
     try {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `treatment_table`");
+      _db.execSQL("DELETE FROM `treatment_step_table`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -118,6 +140,20 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
           _treatmentDao = new TreatmentDao_Impl(this);
         }
         return _treatmentDao;
+      }
+    }
+  }
+
+  @Override
+  public TreatmentStepDao treatmentStepsDao() {
+    if (_treatmentStepDao != null) {
+      return _treatmentStepDao;
+    } else {
+      synchronized(this) {
+        if(_treatmentStepDao == null) {
+          _treatmentStepDao = new TreatmentStepDao_Impl(this);
+        }
+        return _treatmentStepDao;
       }
     }
   }

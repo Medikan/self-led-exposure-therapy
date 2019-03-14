@@ -15,7 +15,7 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
 
     private Context mContext;
     private Class mClass;
-    private String[][] mDataset;
+    private List<TreatmentStep> mDataset;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -28,18 +28,11 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
         }
     }
 
-    public AllStepsRecyclerViewAdapter(Context context, Class targetClass, String[][] myDataset){
+    public AllStepsRecyclerViewAdapter(Context context, Class targetClass){
 
         mContext = context;
         mClass = targetClass;
-        mDataset = myDataset;
     }
-
-//    void setTreatments(List<String> treatments) {
-//
-//        mDataset = treatments;
-//        notifyDataSetChanged();
-//    }
 
     @Override
     public AllStepsRecyclerViewAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -53,8 +46,8 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
     @Override
     public void onBindViewHolder(AllStepsRecyclerViewAdapter.MyViewHolder holder, final int position) {
 
-        holder.treatmentNameTextView.setText(mDataset[position][0]);
-        holder.treatmentDescriptionTextView.setText(mDataset[position][1]);
+        holder.treatmentNameTextView.setText(mDataset.get(position).getTreatmentStep());
+        holder.treatmentDescriptionTextView.setText(mDataset.get(position).getDescription());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +61,16 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        if(mDataset != null)
+            return mDataset.size();
+        else return 0;
+    }
+
+
+    void setTreatmentSteps(List<TreatmentStep> treatmentSteps) {
+
+        mDataset = treatmentSteps;
+        notifyDataSetChanged();
     }
 }
 

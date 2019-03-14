@@ -18,18 +18,10 @@ public class AvailableTreatmentsPage extends AppCompatActivity {
 
     private TreatmentViewModel mTreatmentViewModel;
 
-    private String[][] allTreatmentsData = {
-            {"Potato", "Starchy"},
-            {"Lettuce", "Crunchy"},
-            {"Square Cheese", "Squarish and Cheesy"}
-    };
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_available_treatments_page);
-
-
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 

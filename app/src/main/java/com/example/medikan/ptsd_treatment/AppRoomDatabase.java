@@ -7,9 +7,10 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-@Database(entities = {Treatment.class}, version = 1)
+@Database(entities = {Treatment.class, TreatmentStep.class}, version = 2)
 public abstract class AppRoomDatabase extends RoomDatabase {
     public abstract TreatmentDao treatmentDao();
+    public abstract TreatmentStepDao treatmentStepsDao();
 
 
     //Makes sure there's only one instance of the db running
@@ -25,6 +26,7 @@ public abstract class AppRoomDatabase extends RoomDatabase {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             AppRoomDatabase.class, "app_database")
                             .addCallback(sRoomDatabaseCallback)
+                            .fallbackToDestructiveMigration()
                             .build();
                 }
             }

@@ -61,6 +61,7 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
             public void onClick(View view) {
 
                     Intent intent = new Intent(mContext, mClass);
+                    intent.putExtra("treatmentID", mDataset.get(position).getTreatmentID());
                     mContext.startActivity(intent);
             }
         });
