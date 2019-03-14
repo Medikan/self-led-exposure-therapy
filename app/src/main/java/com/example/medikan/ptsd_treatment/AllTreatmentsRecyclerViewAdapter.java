@@ -13,14 +13,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 import static android.content.ContentValues.TAG;
 
 //TODO Change name to be more generic since this is the recylcer view adapter for both All Treatments and All steps
 public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyclerViewAdapter.MyViewHolder> {
 
-    private String[][] mDataset;
     private Context mContext;
     private Class mClass;
+    private List<Treatment> mDataset;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -33,11 +35,10 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
         }
     }
 
-    public AllTreatmentsRecyclerViewAdapter(Context context, Class targetClass, String[][] myDataset){
+    public AllTreatmentsRecyclerViewAdapter(Context context, Class targetClass){
 
         mContext = context;
         mClass = targetClass;
-        mDataset = myDataset;
     }
 
     @Override
@@ -52,8 +53,8 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
     @Override
     public void onBindViewHolder(AllTreatmentsRecyclerViewAdapter.MyViewHolder holder, final int position) {
 
-        holder.treatmentNameTextView.setText(mDataset[position][0]);
-        holder.treatmentDescriptionTextView.setText(mDataset[position][1]);
+        holder.treatmentNameTextView.setText(mDataset.get(position).getTreatment());
+        holder.treatmentDescriptionTextView.setText(mDataset.get(position).getDescription());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +68,15 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        if (mDataset != null)
+            return mDataset.size();
+        return 0;
+    }
+
+
+    public void setTreatments(List<Treatment> treatments) {
+
+        mDataset = treatments;
+        notifyDataSetChanged();
     }
 }

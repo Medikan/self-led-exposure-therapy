@@ -7,8 +7,15 @@ INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/An
 MERGED from [com.android.support:design:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/06791f31727109167d6cb4336c424098/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2485fbeddad8b7b4e1f2e21835c30e22/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/medikan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1e541d61cf9b2957732a13a4cfa35249/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1-rc1.aar/c99b86d432b66411c1d99c4e825e3ce0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:17:1-30:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/495f026b571ec221781b59e656d4557b/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:transition:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a194971d9efe955a5b331928b09531c/AndroidManifest.xml:17:1-28:12
+MERGED from [android.arch.persistence:db-framework:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1-rc1.aar/1def036c1f2747c89217b1c4d2d32a87/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/db-1.1.1-rc1.aar/9544d0416b0bf7a0ea1ecc87686386f0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/92da1d4b2387e1d1fe9d41e670d674a5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7ae836ae7ab25cd6ad4ea01afa54b12a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0925ca38bca9995c501ba39a01ce8ed8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/1f5440621589745d0b48fb46941782cb/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/badde9fe72400a2c61bd1ac288ef5cf5/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/cf5a5ea1b18e8bb4cae1edbf85ea64d5/AndroidManifest.xml:17:1-28:12
@@ -17,7 +24,8 @@ MERGED from [com.android.support:support-media-compat:26.1.0] /Users/medikan/.gr
 MERGED from [com.android.support:support-core-utils:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d6cb4341bf9c7d914345a1085fd3740b/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/66a61221a60ca372fddb8fbe8031dee0/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5b6daf39f339c7d098413d55ffd03b37/AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:17:1-30:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/52a37084e8e7ad8eda80acc040d62db5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2d1ce6a701aaf8d0149e1c9be792c6db/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
@@ -43,6 +51,8 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/cac
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2485fbeddad8b7b4e1f2e21835c30e22/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/medikan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1e541d61cf9b2957732a13a4cfa35249/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/medikan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1e541d61cf9b2957732a13a4cfa35249/AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:22:5-28:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/495f026b571ec221781b59e656d4557b/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/495f026b571ec221781b59e656d4557b/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a194971d9efe955a5b331928b09531c/AndroidManifest.xml:22:5-26:19
@@ -63,8 +73,6 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/medikan/
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/66a61221a60ca372fddb8fbe8031dee0/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5b6daf39f339c7d098413d55ffd03b37/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5b6daf39f339c7d098413d55ffd03b37/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
 		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
@@ -153,10 +161,24 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/cac
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2485fbeddad8b7b4e1f2e21835c30e22/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/medikan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1e541d61cf9b2957732a13a4cfa35249/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/medikan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1e541d61cf9b2957732a13a4cfa35249/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.persistence.room:runtime:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1-rc1.aar/c99b86d432b66411c1d99c4e825e3ce0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1-rc1.aar/c99b86d432b66411c1d99c4e825e3ce0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/495f026b571ec221781b59e656d4557b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/495f026b571ec221781b59e656d4557b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a194971d9efe955a5b331928b09531c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/7a194971d9efe955a5b331928b09531c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1-rc1.aar/1def036c1f2747c89217b1c4d2d32a87/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1-rc1.aar/1def036c1f2747c89217b1c4d2d32a87/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/db-1.1.1-rc1.aar/9544d0416b0bf7a0ea1ecc87686386f0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1-rc1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/db-1.1.1-rc1.aar/9544d0416b0bf7a0ea1ecc87686386f0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/92da1d4b2387e1d1fe9d41e670d674a5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/92da1d4b2387e1d1fe9d41e670d674a5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7ae836ae7ab25cd6ad4ea01afa54b12a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7ae836ae7ab25cd6ad4ea01afa54b12a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0925ca38bca9995c501ba39a01ce8ed8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0925ca38bca9995c501ba39a01ce8ed8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/1f5440621589745d0b48fb46941782cb/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/1f5440621589745d0b48fb46941782cb/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/badde9fe72400a2c61bd1ac288ef5cf5/AndroidManifest.xml:21:5-23:60
@@ -173,8 +195,10 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/medikan/
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/66a61221a60ca372fddb8fbe8031dee0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5b6daf39f339c7d098413d55ffd03b37/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5b6daf39f339c7d098413d55ffd03b37/AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/52a37084e8e7ad8eda80acc040d62db5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/52a37084e8e7ad8eda80acc040d62db5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2d1ce6a701aaf8d0149e1c9be792c6db/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2d1ce6a701aaf8d0149e1c9be792c6db/AndroidManifest.xml:20:5-44
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
@@ -215,9 +239,13 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/c
 		ADDED from [com.android.support:design:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/06791f31727109167d6cb4336c424098/AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:design:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/06791f31727109167d6cb4336c424098/AndroidManifest.xml:27:13-51
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:27:13-44
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/1c4edff29a91dc3d55ad91d15fe36faa/AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/d6addc82fb5b39007dd5e654c11f2037/AndroidManifest.xml:24:13-83

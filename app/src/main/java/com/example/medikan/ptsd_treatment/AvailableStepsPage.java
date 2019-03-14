@@ -27,7 +27,7 @@ public class AvailableStepsPage extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        recyclerAdapter = new AllTreatmentsRecyclerViewAdapter(this, TreatmentDescriptionPage.class, allStepsData);
+        recyclerAdapter = new AllStepsRecyclerViewAdapter(this, TreatmentDescriptionPage.class, allStepsData);
         recyclerView.setAdapter(recyclerAdapter);
     }
 }
