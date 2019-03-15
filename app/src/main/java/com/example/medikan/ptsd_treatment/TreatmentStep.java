@@ -15,6 +15,12 @@ public class TreatmentStep {
     private String mTreatmentStep;
     @ColumnInfo(name = "description")
     private String mDescription;
+    @ColumnInfo(name = "longInstruction")
+    private String mLongInstruction;
+    @ColumnInfo(name = "shortInstruction")
+    private String mShortInstruction;
+    @ColumnInfo(name = "timerValue")
+    private int mTimerValue;
     @ColumnInfo(name = "isComplete")
     private Boolean mIsComplete;
     @ColumnInfo(name = "isRequired")
@@ -24,11 +30,14 @@ public class TreatmentStep {
     @ColumnInfo(name = "treatmentID")
     private int mTreatmentID;
 
-    public TreatmentStep(@NonNull int treatmentStepID, @NonNull String treatmentStep, String description, double priorityLevel, int treatmentID)
+    public TreatmentStep(@NonNull int treatmentStepID,@NonNull String treatmentStep, String description, String longInstruction, String shortInstruction, int timerValue, double priorityLevel, int treatmentID)
     {
         this.mTreatmentStepID = treatmentStepID;
         this.mTreatmentStep = treatmentStep;
         this.mDescription = description;
+        this.mLongInstruction = longInstruction;
+        this.mShortInstruction = shortInstruction;
+        this.mTimerValue = timerValue;
         this.mIsComplete = false;
         this.mIsRequired = true;
         this.mPriorityLevel = priorityLevel;
@@ -40,6 +49,12 @@ public class TreatmentStep {
     public String getTreatmentStep() {return this.mTreatmentStep;}
 
     public String getDescription() {return this.mDescription;}
+
+    public String getLongInstruction() {return this.mLongInstruction;}
+
+    public String getShortInstruction() {return this.mShortInstruction;}
+
+    public int getTimerValue() {return this.mTimerValue;}
 
     public Boolean getIsComplete() {return this.mIsComplete;}
 

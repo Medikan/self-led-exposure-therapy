@@ -75,7 +75,7 @@ public class DisplayTimerActivity extends AppCompatActivity {
      * WARNING converting from long to int may mess up some larger numbers. Might be a bug here in the future
      * @param timerValue
      */
-    private void setupTimer(int timerValue) {
+    private void setupTimer(long timerValue) {
 
         final Context context = this;
 

@@ -54,6 +54,7 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
             public void onClick(View view) {
 
                 Intent intent = new Intent(mContext, mClass);
+                intent.putExtra("treatmentStepID", mDataset.get(position).getTreatmentStepID());
                 mContext.startActivity(intent);
             }
         });

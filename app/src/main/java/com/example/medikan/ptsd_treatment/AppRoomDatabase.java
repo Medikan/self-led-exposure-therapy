@@ -7,7 +7,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-@Database(entities = {Treatment.class, TreatmentStep.class}, version = 2)
+@Database(entities = {Treatment.class, TreatmentStep.class}, version = 6)
 public abstract class AppRoomDatabase extends RoomDatabase {
     public abstract TreatmentDao treatmentDao();
     public abstract TreatmentStepDao treatmentStepsDao();

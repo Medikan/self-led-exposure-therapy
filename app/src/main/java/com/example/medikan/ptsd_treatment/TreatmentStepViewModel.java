@@ -12,6 +12,7 @@ public class TreatmentStepViewModel extends AndroidViewModel {
     private AppDatabaseRepository mRepository;
     private LiveData<List<TreatmentStep>> mAllTreatmentSteps;
     private LiveData<List<TreatmentStep>> mSpecificTreatmentSteps;
+    private LiveData<TreatmentStep> mTreatmentStep;
 
     public TreatmentStepViewModel(@NonNull Application application) {
         super(application);
@@ -26,6 +27,13 @@ public class TreatmentStepViewModel extends AndroidViewModel {
         mSpecificTreatmentSteps = mRepository.getSpecificTreatmentSteps(treatmentID);
 
         return mSpecificTreatmentSteps;
+    }
+
+    LiveData<TreatmentStep> getTreatmentStep(int treatmentStepID) {
+
+        mTreatmentStep = mRepository.getTreatmentStep(treatmentStepID);
+
+        return mTreatmentStep;
     }
 
     public void insert(TreatmentStep treatmentStep) {mRepository.insert(treatmentStep);}

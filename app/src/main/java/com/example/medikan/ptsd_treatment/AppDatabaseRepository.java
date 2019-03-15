@@ -13,6 +13,7 @@ public class AppDatabaseRepository {
     private LiveData<List<Treatment>> mAllTreatments;
     private LiveData<List<TreatmentStep>> mAllTreatmentSteps;
     private LiveData<List<TreatmentStep>> mSpecificTreatmentSteps;
+    private LiveData<TreatmentStep> mTreatmentStep;
 
     private AppRoomDatabase db;
 
@@ -39,6 +40,13 @@ public class AppDatabaseRepository {
         mSpecificTreatmentSteps = db.treatmentStepsDao().getSpecificTreatmentSteps(treatmentID);
 
         return mSpecificTreatmentSteps;
+    }
+
+    LiveData<TreatmentStep> getTreatmentStep(int treatmentStepID) {
+
+        mTreatmentStep = db.treatmentStepsDao().getTreatmentStep(treatmentStepID);
+
+        return mTreatmentStep;
     }
 
     public void insert (Treatment treatment) {

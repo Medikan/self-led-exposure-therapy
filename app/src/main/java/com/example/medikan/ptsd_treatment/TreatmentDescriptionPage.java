@@ -1,25 +1,68 @@
 package com.example.medikan.ptsd_treatment;
 
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.List;
 
 public class TreatmentDescriptionPage extends AppCompatActivity {
 
     private Button button;
+    private TextView title;
+    private TextView description;
+    private int treatmentStepID;
+    private LiveData<TreatmentStep> treatmentStep;
+
+    private Intent intent;
+
+    private TreatmentStepViewModel mTreatmentStepViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treatment_description_page);
 
+        Intent receivedIntent = getIntent();
+        treatmentStepID = receivedIntent.getIntExtra("treatmentStepID", 1);
+
+
+        intent = new Intent(this, DisplayTimerActivity.class);
+
         onClickListener();
+        setupText(treatmentStepID);
+    }
+
+    public void setupText(final int treatmentStepID) {
+
+        title = (TextView) findViewById(R.id.treatmentTitle);
+        description = (TextView) findViewById(R.id.treatmentDescription);
+
+        mTreatmentStepViewModel = ViewModelProviders.of(this).get(TreatmentStepViewModel.class);
+
+        mTreatmentStepViewModel.getTreatmentStep(treatmentStepID).observe(this, new Observer<TreatmentStep>() {
+            @Override
+            public void onChanged(@Nullable TreatmentStep treatmentStep) {
+                title.setText(treatmentStep.getTreatmentStep());
+                description.setText(treatmentStep.getLongInstruction());
+
+//                intent.getExtras().clear();
+                intent.putExtra("timerValue", treatmentStep.getTimerValue());
+            }
+        });
+
+
     }
 
     public void onClickListener() {
@@ -33,8 +76,6 @@ public class TreatmentDescriptionPage extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(context, DisplayTimerActivity.class);
-                        intent.putExtra("timerValue", 30000);
                         startActivity(intent);
                     }
                 }

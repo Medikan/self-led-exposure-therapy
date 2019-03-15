@@ -21,4 +21,7 @@ public interface TreatmentStepDao {
 
     @Query("SELECT * FROM treatment_step_table WHERE treatmentID = (:treatmentID) ORDER BY mTreatmentStepID")
     LiveData<List<TreatmentStep>> getSpecificTreatmentSteps(int treatmentID);
+
+    @Query("SELECT * FROM treatment_step_table WHERE mTreatmentStepID = (:treatmentStepID)")
+    LiveData<TreatmentStep> getTreatmentStep(int treatmentStepID);
 }

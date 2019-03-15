@@ -32,7 +32,7 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
     this.__insertionAdapterOfTreatmentStep = new EntityInsertionAdapter<TreatmentStep>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `treatment_step_table`(`mTreatmentStepID`,`treatmentStep`,`description`,`isComplete`,`isRequired`,`priorityLevel`,`treatmentID`) VALUES (?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `treatment_step_table`(`mTreatmentStepID`,`treatmentStep`,`description`,`longInstruction`,`shortInstruction`,`timerValue`,`isComplete`,`isRequired`,`priorityLevel`,`treatmentID`) VALUES (?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -48,22 +48,33 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
         } else {
           stmt.bindString(3, value.getDescription());
         }
+        if (value.getLongInstruction() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getLongInstruction());
+        }
+        if (value.getShortInstruction() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getShortInstruction());
+        }
+        stmt.bindLong(6, value.getTimerValue());
         final Integer _tmp;
         _tmp = value.getIsComplete() == null ? null : (value.getIsComplete() ? 1 : 0);
         if (_tmp == null) {
-          stmt.bindNull(4);
+          stmt.bindNull(7);
         } else {
-          stmt.bindLong(4, _tmp);
+          stmt.bindLong(7, _tmp);
         }
         final Integer _tmp_1;
         _tmp_1 = value.getIsRequired() == null ? null : (value.getIsRequired() ? 1 : 0);
         if (_tmp_1 == null) {
-          stmt.bindNull(5);
+          stmt.bindNull(8);
         } else {
-          stmt.bindLong(5, _tmp_1);
+          stmt.bindLong(8, _tmp_1);
         }
-        stmt.bindDouble(6, value.getPriorityLevel());
-        stmt.bindLong(7, value.getTreatmentID());
+        stmt.bindDouble(9, value.getPriorityLevel());
+        stmt.bindLong(10, value.getTreatmentID());
       }
     };
     this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
@@ -122,6 +133,9 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
           final int _cursorIndexOfMTreatmentStepID = _cursor.getColumnIndexOrThrow("mTreatmentStepID");
           final int _cursorIndexOfMTreatmentStep = _cursor.getColumnIndexOrThrow("treatmentStep");
           final int _cursorIndexOfMDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfMLongInstruction = _cursor.getColumnIndexOrThrow("longInstruction");
+          final int _cursorIndexOfMShortInstruction = _cursor.getColumnIndexOrThrow("shortInstruction");
+          final int _cursorIndexOfMTimerValue = _cursor.getColumnIndexOrThrow("timerValue");
           final int _cursorIndexOfMIsComplete = _cursor.getColumnIndexOrThrow("isComplete");
           final int _cursorIndexOfMIsRequired = _cursor.getColumnIndexOrThrow("isRequired");
           final int _cursorIndexOfMPriorityLevel = _cursor.getColumnIndexOrThrow("priorityLevel");
@@ -135,11 +149,17 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
             _tmpMTreatmentStep = _cursor.getString(_cursorIndexOfMTreatmentStep);
             final String _tmpMDescription;
             _tmpMDescription = _cursor.getString(_cursorIndexOfMDescription);
+            final String _tmpMLongInstruction;
+            _tmpMLongInstruction = _cursor.getString(_cursorIndexOfMLongInstruction);
+            final String _tmpMShortInstruction;
+            _tmpMShortInstruction = _cursor.getString(_cursorIndexOfMShortInstruction);
+            final int _tmpMTimerValue;
+            _tmpMTimerValue = _cursor.getInt(_cursorIndexOfMTimerValue);
             final double _tmpMPriorityLevel;
             _tmpMPriorityLevel = _cursor.getDouble(_cursorIndexOfMPriorityLevel);
             final int _tmpMTreatmentID;
             _tmpMTreatmentID = _cursor.getInt(_cursorIndexOfMTreatmentID);
-            _item = new TreatmentStep(_tmpMTreatmentStepID,_tmpMTreatmentStep,_tmpMDescription,_tmpMPriorityLevel,_tmpMTreatmentID);
+            _item = new TreatmentStep(_tmpMTreatmentStepID,_tmpMTreatmentStep,_tmpMDescription,_tmpMLongInstruction,_tmpMShortInstruction,_tmpMTimerValue,_tmpMPriorityLevel,_tmpMTreatmentID);
             final Boolean _tmpMIsComplete;
             final Integer _tmp;
             if (_cursor.isNull(_cursorIndexOfMIsComplete)) {
@@ -198,6 +218,9 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
           final int _cursorIndexOfMTreatmentStepID = _cursor.getColumnIndexOrThrow("mTreatmentStepID");
           final int _cursorIndexOfMTreatmentStep = _cursor.getColumnIndexOrThrow("treatmentStep");
           final int _cursorIndexOfMDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfMLongInstruction = _cursor.getColumnIndexOrThrow("longInstruction");
+          final int _cursorIndexOfMShortInstruction = _cursor.getColumnIndexOrThrow("shortInstruction");
+          final int _cursorIndexOfMTimerValue = _cursor.getColumnIndexOrThrow("timerValue");
           final int _cursorIndexOfMIsComplete = _cursor.getColumnIndexOrThrow("isComplete");
           final int _cursorIndexOfMIsRequired = _cursor.getColumnIndexOrThrow("isRequired");
           final int _cursorIndexOfMPriorityLevel = _cursor.getColumnIndexOrThrow("priorityLevel");
@@ -211,11 +234,17 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
             _tmpMTreatmentStep = _cursor.getString(_cursorIndexOfMTreatmentStep);
             final String _tmpMDescription;
             _tmpMDescription = _cursor.getString(_cursorIndexOfMDescription);
+            final String _tmpMLongInstruction;
+            _tmpMLongInstruction = _cursor.getString(_cursorIndexOfMLongInstruction);
+            final String _tmpMShortInstruction;
+            _tmpMShortInstruction = _cursor.getString(_cursorIndexOfMShortInstruction);
+            final int _tmpMTimerValue;
+            _tmpMTimerValue = _cursor.getInt(_cursorIndexOfMTimerValue);
             final double _tmpMPriorityLevel;
             _tmpMPriorityLevel = _cursor.getDouble(_cursorIndexOfMPriorityLevel);
             final int _tmpMTreatmentID;
             _tmpMTreatmentID = _cursor.getInt(_cursorIndexOfMTreatmentID);
-            _item = new TreatmentStep(_tmpMTreatmentStepID,_tmpMTreatmentStep,_tmpMDescription,_tmpMPriorityLevel,_tmpMTreatmentID);
+            _item = new TreatmentStep(_tmpMTreatmentStepID,_tmpMTreatmentStep,_tmpMDescription,_tmpMLongInstruction,_tmpMShortInstruction,_tmpMTimerValue,_tmpMPriorityLevel,_tmpMTreatmentID);
             final Boolean _tmpMIsComplete;
             final Integer _tmp;
             if (_cursor.isNull(_cursorIndexOfMIsComplete)) {
@@ -235,6 +264,91 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
             _tmpMIsRequired = _tmp_1 == null ? null : _tmp_1 != 0;
             _item.setIsRequired(_tmpMIsRequired);
             _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<TreatmentStep> getTreatmentStep(int treatmentStepID) {
+    final String _sql = "SELECT * FROM treatment_step_table WHERE mTreatmentStepID = (?)";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, treatmentStepID);
+    return new ComputableLiveData<TreatmentStep>() {
+      private Observer _observer;
+
+      @Override
+      protected TreatmentStep compute() {
+        if (_observer == null) {
+          _observer = new Observer("treatment_step_table") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfMTreatmentStepID = _cursor.getColumnIndexOrThrow("mTreatmentStepID");
+          final int _cursorIndexOfMTreatmentStep = _cursor.getColumnIndexOrThrow("treatmentStep");
+          final int _cursorIndexOfMDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfMLongInstruction = _cursor.getColumnIndexOrThrow("longInstruction");
+          final int _cursorIndexOfMShortInstruction = _cursor.getColumnIndexOrThrow("shortInstruction");
+          final int _cursorIndexOfMTimerValue = _cursor.getColumnIndexOrThrow("timerValue");
+          final int _cursorIndexOfMIsComplete = _cursor.getColumnIndexOrThrow("isComplete");
+          final int _cursorIndexOfMIsRequired = _cursor.getColumnIndexOrThrow("isRequired");
+          final int _cursorIndexOfMPriorityLevel = _cursor.getColumnIndexOrThrow("priorityLevel");
+          final int _cursorIndexOfMTreatmentID = _cursor.getColumnIndexOrThrow("treatmentID");
+          final TreatmentStep _result;
+          if(_cursor.moveToFirst()) {
+            final int _tmpMTreatmentStepID;
+            _tmpMTreatmentStepID = _cursor.getInt(_cursorIndexOfMTreatmentStepID);
+            final String _tmpMTreatmentStep;
+            _tmpMTreatmentStep = _cursor.getString(_cursorIndexOfMTreatmentStep);
+            final String _tmpMDescription;
+            _tmpMDescription = _cursor.getString(_cursorIndexOfMDescription);
+            final String _tmpMLongInstruction;
+            _tmpMLongInstruction = _cursor.getString(_cursorIndexOfMLongInstruction);
+            final String _tmpMShortInstruction;
+            _tmpMShortInstruction = _cursor.getString(_cursorIndexOfMShortInstruction);
+            final int _tmpMTimerValue;
+            _tmpMTimerValue = _cursor.getInt(_cursorIndexOfMTimerValue);
+            final double _tmpMPriorityLevel;
+            _tmpMPriorityLevel = _cursor.getDouble(_cursorIndexOfMPriorityLevel);
+            final int _tmpMTreatmentID;
+            _tmpMTreatmentID = _cursor.getInt(_cursorIndexOfMTreatmentID);
+            _result = new TreatmentStep(_tmpMTreatmentStepID,_tmpMTreatmentStep,_tmpMDescription,_tmpMLongInstruction,_tmpMShortInstruction,_tmpMTimerValue,_tmpMPriorityLevel,_tmpMTreatmentID);
+            final Boolean _tmpMIsComplete;
+            final Integer _tmp;
+            if (_cursor.isNull(_cursorIndexOfMIsComplete)) {
+              _tmp = null;
+            } else {
+              _tmp = _cursor.getInt(_cursorIndexOfMIsComplete);
+            }
+            _tmpMIsComplete = _tmp == null ? null : _tmp != 0;
+            _result.setIsComplete(_tmpMIsComplete);
+            final Boolean _tmpMIsRequired;
+            final Integer _tmp_1;
+            if (_cursor.isNull(_cursorIndexOfMIsRequired)) {
+              _tmp_1 = null;
+            } else {
+              _tmp_1 = _cursor.getInt(_cursorIndexOfMIsRequired);
+            }
+            _tmpMIsRequired = _tmp_1 == null ? null : _tmp_1 != 0;
+            _result.setIsRequired(_tmpMIsRequired);
+          } else {
+            _result = null;
           }
           return _result;
         } finally {

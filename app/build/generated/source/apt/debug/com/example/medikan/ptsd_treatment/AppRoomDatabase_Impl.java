@@ -27,13 +27,13 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(6) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `treatment_table` (`mTreatmentID` INTEGER NOT NULL, `treatment` TEXT NOT NULL, `description` TEXT, `isComplete` INTEGER, `isRequired` INTEGER, `priorityLevel` REAL NOT NULL, PRIMARY KEY(`mTreatmentID`))");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `treatment_step_table` (`mTreatmentStepID` INTEGER NOT NULL, `treatmentStep` TEXT NOT NULL, `description` TEXT, `isComplete` INTEGER, `isRequired` INTEGER, `priorityLevel` REAL NOT NULL, `treatmentID` INTEGER NOT NULL, PRIMARY KEY(`mTreatmentStepID`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `treatment_step_table` (`mTreatmentStepID` INTEGER NOT NULL, `treatmentStep` TEXT NOT NULL, `description` TEXT, `longInstruction` TEXT, `shortInstruction` TEXT, `timerValue` INTEGER NOT NULL, `isComplete` INTEGER, `isRequired` INTEGER, `priorityLevel` REAL NOT NULL, `treatmentID` INTEGER NOT NULL, PRIMARY KEY(`mTreatmentStepID`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"063b32ebff2b3a28938ab4bd3a23434b\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"0344f0f9b6fc0792f212c56bcd44ae86\")");
       }
 
       @Override
@@ -80,10 +80,13 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
                   + " Expected:\n" + _infoTreatmentTable + "\n"
                   + " Found:\n" + _existingTreatmentTable);
         }
-        final HashMap<String, TableInfo.Column> _columnsTreatmentStepTable = new HashMap<String, TableInfo.Column>(7);
+        final HashMap<String, TableInfo.Column> _columnsTreatmentStepTable = new HashMap<String, TableInfo.Column>(10);
         _columnsTreatmentStepTable.put("mTreatmentStepID", new TableInfo.Column("mTreatmentStepID", "INTEGER", true, 1));
         _columnsTreatmentStepTable.put("treatmentStep", new TableInfo.Column("treatmentStep", "TEXT", true, 0));
         _columnsTreatmentStepTable.put("description", new TableInfo.Column("description", "TEXT", false, 0));
+        _columnsTreatmentStepTable.put("longInstruction", new TableInfo.Column("longInstruction", "TEXT", false, 0));
+        _columnsTreatmentStepTable.put("shortInstruction", new TableInfo.Column("shortInstruction", "TEXT", false, 0));
+        _columnsTreatmentStepTable.put("timerValue", new TableInfo.Column("timerValue", "INTEGER", true, 0));
         _columnsTreatmentStepTable.put("isComplete", new TableInfo.Column("isComplete", "INTEGER", false, 0));
         _columnsTreatmentStepTable.put("isRequired", new TableInfo.Column("isRequired", "INTEGER", false, 0));
         _columnsTreatmentStepTable.put("priorityLevel", new TableInfo.Column("priorityLevel", "REAL", true, 0));
@@ -98,7 +101,7 @@ public class AppRoomDatabase_Impl extends AppRoomDatabase {
                   + " Found:\n" + _existingTreatmentStepTable);
         }
       }
-    }, "063b32ebff2b3a28938ab4bd3a23434b", "32c7404f05a8c8076619a00da92e9258");
+    }, "0344f0f9b6fc0792f212c56bcd44ae86", "238ede7ee6bffc27029b9c037d0f5eaa");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
