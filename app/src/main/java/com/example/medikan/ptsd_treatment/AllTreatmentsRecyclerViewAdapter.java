@@ -1,9 +1,11 @@
 package com.example.medikan.ptsd_treatment;
 
 import android.app.Activity;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.Adapter;
 import android.util.Log;
@@ -17,11 +19,11 @@ import java.util.List;
 
 import static android.content.ContentValues.TAG;
 
-//TODO Change name to be more generic since this is the recylcer view adapter for both All Treatments and All steps
 public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyclerViewAdapter.MyViewHolder> {
 
     private Context mContext;
     private Class mClass;
+    private Activity mActivity;
     private List<Treatment> mDataset;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {

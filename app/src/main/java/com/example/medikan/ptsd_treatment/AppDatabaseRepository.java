@@ -10,7 +10,7 @@ public class AppDatabaseRepository {
 
     private TreatmentDao mTreatmentDao;
     private TreatmentStepDao mTreatmentStepDao;
-    private LiveData<List<Treatment>> mAllTreatments;
+    private LiveData<List<Treatment>> mAllTreatments, mAllRequiredTreatments;
     private LiveData<List<TreatmentStep>> mAllTreatmentSteps;
     private LiveData<List<TreatmentStep>> mSpecificTreatmentSteps;
     private LiveData<TreatmentStep> mTreatmentStep;
@@ -23,6 +23,7 @@ public class AppDatabaseRepository {
         mTreatmentDao = db.treatmentDao();
         mTreatmentStepDao = db.treatmentStepsDao();
         mAllTreatments = mTreatmentDao.getAllTreatments();
+        mAllRequiredTreatments = mTreatmentDao.getAllRequiredTreatments();
         mAllTreatmentSteps = mTreatmentStepDao.getAllTreatmentSteps();
     }
 
@@ -30,6 +31,8 @@ public class AppDatabaseRepository {
 
         return mAllTreatments;
     }
+
+    LiveData<List<Treatment>> getAllRequiredTreatments() { return mAllRequiredTreatments; }
 
     LiveData<List<TreatmentStep>> getAllTreatmentSteps() {
         return mAllTreatmentSteps;
@@ -52,6 +55,11 @@ public class AppDatabaseRepository {
     public void insert (Treatment treatment) {
 
         new insertAsyncTask(mTreatmentDao).execute(treatment);
+    }
+
+    public void update (Treatment treatment) {
+
+        new updateAsyncTaskTreatment(mTreatmentDao).execute(treatment);
     }
 
     public void insert (TreatmentStep treatmentStep) {
@@ -85,6 +93,20 @@ public class AppDatabaseRepository {
         @Override
         protected Void doInBackground(final TreatmentStep... params) {
             mAsyncTaskDao.insert(params[0]);
+            return null;
+        }
+    }
+
+    private static class updateAsyncTaskTreatment extends AsyncTask<Treatment, Void, Void> {
+
+        private TreatmentDao mAsyncTaskDao;
+
+        updateAsyncTaskTreatment(TreatmentDao dao) { mAsyncTaskDao = dao; }
+
+        @Override
+        protected Void doInBackground(final Treatment... params) {
+
+            mAsyncTaskDao.updateTreatments(params[0]);
             return null;
         }
     }

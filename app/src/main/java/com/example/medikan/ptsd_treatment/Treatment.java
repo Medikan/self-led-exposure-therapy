@@ -22,13 +22,13 @@ public class Treatment {
     @ColumnInfo(name = "priorityLevel")
     private double mPriorityLevel;
 
-    public Treatment(@NonNull int treatmentID, @NonNull String treatment, String description, double priorityLevel)
+    public Treatment(@NonNull int treatmentID, @NonNull String treatment, String description, Boolean isComplete, Boolean isRequired, double priorityLevel)
     {
         this.mTreatmentID = treatmentID;
         this.mTreatment = treatment;
         this.mDescription = description;
-        this.mIsComplete = false;
-        this.mIsRequired = true;
+        this.mIsComplete = isComplete;
+        this.mIsRequired = isRequired;
         this.mPriorityLevel = priorityLevel;
     }
 
@@ -47,4 +47,6 @@ public class Treatment {
     public void setIsComplete(Boolean isComplete) {mIsComplete = isComplete;}
 
     public void setIsRequired(Boolean isRequired) {mIsRequired = isRequired;}
+
+    public void setPriorityLevel(Double priorityLevel) {mPriorityLevel = priorityLevel;}
 }

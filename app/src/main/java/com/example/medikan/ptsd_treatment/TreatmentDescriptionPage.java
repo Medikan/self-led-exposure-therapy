@@ -57,8 +57,7 @@ public class TreatmentDescriptionPage extends AppCompatActivity {
                 title.setText(treatmentStep.getTreatmentStep());
                 description.setText(treatmentStep.getLongInstruction());
 
-//                intent.getExtras().clear();
-                intent.putExtra("timerValue", treatmentStep.getTimerValue());
+                intent.putExtra("treatmentStepID", treatmentStep.getTreatmentStepID());
             }
         });
 

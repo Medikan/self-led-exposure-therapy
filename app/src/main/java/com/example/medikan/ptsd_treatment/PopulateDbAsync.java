@@ -27,13 +27,13 @@ class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
     private void populateTreatments() {
 
         mTreatmentDao.deleteAll();
-        Treatment treatment = new Treatment(1, "Test Treatment 1","Description for treatment 1",1);
+        Treatment treatment = new Treatment(1, "Test Treatment 1","Description for treatment 1", false, true,1);
         mTreatmentDao.insert(treatment);
 
-        treatment = new Treatment(2,"Test Treatment 2", "Description for treatment 2", 1);
+        treatment = new Treatment(2,"Test Treatment 2", "Description for treatment 2",false, true, 1);
         mTreatmentDao.insert(treatment);
 
-        treatment = new Treatment(3,"Test Treatment 3", "Description for treatment 3", 1);
+        treatment = new Treatment(3,"Test Treatment 3", "Description for treatment 3",false, true, 1);
         mTreatmentDao.insert(treatment);
     }
 

@@ -33,7 +33,7 @@ public class AvailableTreatmentsPage extends AppCompatActivity {
 
         mTreatmentViewModel = ViewModelProviders.of(this).get(TreatmentViewModel.class);
 
-        mTreatmentViewModel.getAllTreatments().observe(this, new Observer<List<Treatment>>() {
+        mTreatmentViewModel.getAllRequiredTreatments().observe(this, new Observer<List<Treatment>>() {
             @Override
             public void onChanged(@Nullable List<Treatment> treatments) {
                 ((AllTreatmentsRecyclerViewAdapter) recyclerAdapter).setTreatments(treatments);

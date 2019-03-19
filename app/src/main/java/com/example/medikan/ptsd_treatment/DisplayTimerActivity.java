@@ -1,9 +1,12 @@
 package com.example.medikan.ptsd_treatment;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.CountDownTimer;
+import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,8 +24,10 @@ import org.w3c.dom.Text;
  */
 public class DisplayTimerActivity extends AppCompatActivity {
 
-    private TextView countdownTimer;
+    private TextView countdownTimer, title, description;
     private CountDownTimer timer;
+    private int timerValue;
+    private TreatmentStepViewModel mTreatmentStepViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +36,36 @@ public class DisplayTimerActivity extends AppCompatActivity {
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
-        int timerValue = intent.getIntExtra("timerValue", 15000); //the amount of time the treatment is for, in milliseconds
+        int treatmentStepID = intent.getIntExtra("treatmentStepID", 1); //the amount of time the treatment is for, in milliseconds
 
-        countdownTimer = (TextView)findViewById(R.id.countdownTimer);
-        countdownTimer.setText(convertCountdownTimer(timerValue));
+        setupText(treatmentStepID);
+    }
 
-        setupTimer(timerValue); //sets up the timer for this activity
+    public void setupText(final int treatmentStepID) {
 
-        onClickListenerButton(timerValue); //creates the onclick listener for the button
+        title = (TextView) findViewById(R.id.activityTitle);
+        description = (TextView) findViewById(R.id.activityDescription);
+
+        mTreatmentStepViewModel = ViewModelProviders.of(this).get(TreatmentStepViewModel.class);
+
+        mTreatmentStepViewModel.getTreatmentStep(treatmentStepID).observe(this, new Observer<TreatmentStep>() {
+            @Override
+            public void onChanged(@Nullable TreatmentStep treatmentStep) {
+                title.setText(treatmentStep.getTreatmentStep());
+                description.setText(treatmentStep.getShortInstruction());
+
+                timerValue = treatmentStep.getTimerValue();
+
+                countdownTimer = (TextView)findViewById(R.id.countdownTimer);
+                countdownTimer.setText(convertCountdownTimer(timerValue));
+
+                setupTimer(timerValue); //sets up the timer for this activity
+
+                onClickListenerButton(timerValue); //creates the onclick listener for the button
+            }
+        });
+
+
     }
 
     /**
