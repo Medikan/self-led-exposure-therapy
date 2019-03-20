@@ -67,6 +67,11 @@ public class AppDatabaseRepository {
         new insertAsyncTaskTreatmentStep(mTreatmentStepDao).execute(treatmentStep);
     }
 
+    public void update(TreatmentStep treatmentStep) {
+
+        new updateAsyncTaskTreatmentStep(mTreatmentStepDao).execute(treatmentStep);
+    }
+
     private static class insertAsyncTask extends AsyncTask<Treatment, Void, Void> {
 
         private TreatmentDao mAsyncTaskDao;
@@ -107,6 +112,20 @@ public class AppDatabaseRepository {
         protected Void doInBackground(final Treatment... params) {
 
             mAsyncTaskDao.updateTreatments(params[0]);
+            return null;
+        }
+    }
+
+    private static class updateAsyncTaskTreatmentStep extends AsyncTask<TreatmentStep, Void, Void> {
+
+        private TreatmentStepDao mAsyncTaskDao;
+
+        updateAsyncTaskTreatmentStep(TreatmentStepDao dao) { mAsyncTaskDao = dao; };
+
+        @Override
+        protected Void doInBackground(final TreatmentStep... params) {
+
+            mAsyncTaskDao.updateTreatmentSteps(params[0]);
             return null;
         }
     }

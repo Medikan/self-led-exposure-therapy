@@ -67,4 +67,6 @@ public class TreatmentStep {
     public void setIsComplete(Boolean isComplete) {mIsComplete = isComplete;}
 
     public void setIsRequired(Boolean isRequired) {mIsRequired = isRequired;}
+
+    public void setPriorityLevel(double priorityLevel) {mPriorityLevel = priorityLevel;}
 }

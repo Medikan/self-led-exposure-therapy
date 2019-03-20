@@ -3,6 +3,7 @@ package com.example.medikan.ptsd_treatment;
 import android.arch.lifecycle.ComputableLiveData;
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.db.SupportSQLiteStatement;
+import android.arch.persistence.room.EntityDeletionOrUpdateAdapter;
 import android.arch.persistence.room.EntityInsertionAdapter;
 import android.arch.persistence.room.InvalidationTracker.Observer;
 import android.arch.persistence.room.RoomDatabase;
@@ -24,6 +25,8 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
   private final RoomDatabase __db;
 
   private final EntityInsertionAdapter __insertionAdapterOfTreatmentStep;
+
+  private final EntityDeletionOrUpdateAdapter __updateAdapterOfTreatmentStep;
 
   private final SharedSQLiteStatement __preparedStmtOfDeleteAll;
 
@@ -77,6 +80,55 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
         stmt.bindLong(10, value.getTreatmentID());
       }
     };
+    this.__updateAdapterOfTreatmentStep = new EntityDeletionOrUpdateAdapter<TreatmentStep>(__db) {
+      @Override
+      public String createQuery() {
+        return "UPDATE OR ABORT `treatment_step_table` SET `mTreatmentStepID` = ?,`treatmentStep` = ?,`description` = ?,`longInstruction` = ?,`shortInstruction` = ?,`timerValue` = ?,`isComplete` = ?,`isRequired` = ?,`priorityLevel` = ?,`treatmentID` = ? WHERE `mTreatmentStepID` = ?";
+      }
+
+      @Override
+      public void bind(SupportSQLiteStatement stmt, TreatmentStep value) {
+        stmt.bindLong(1, value.getTreatmentStepID());
+        if (value.getTreatmentStep() == null) {
+          stmt.bindNull(2);
+        } else {
+          stmt.bindString(2, value.getTreatmentStep());
+        }
+        if (value.getDescription() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getDescription());
+        }
+        if (value.getLongInstruction() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getLongInstruction());
+        }
+        if (value.getShortInstruction() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getShortInstruction());
+        }
+        stmt.bindLong(6, value.getTimerValue());
+        final Integer _tmp;
+        _tmp = value.getIsComplete() == null ? null : (value.getIsComplete() ? 1 : 0);
+        if (_tmp == null) {
+          stmt.bindNull(7);
+        } else {
+          stmt.bindLong(7, _tmp);
+        }
+        final Integer _tmp_1;
+        _tmp_1 = value.getIsRequired() == null ? null : (value.getIsRequired() ? 1 : 0);
+        if (_tmp_1 == null) {
+          stmt.bindNull(8);
+        } else {
+          stmt.bindLong(8, _tmp_1);
+        }
+        stmt.bindDouble(9, value.getPriorityLevel());
+        stmt.bindLong(10, value.getTreatmentID());
+        stmt.bindLong(11, value.getTreatmentStepID());
+      }
+    };
     this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
       @Override
       public String createQuery() {
@@ -91,6 +143,17 @@ public class TreatmentStepDao_Impl implements TreatmentStepDao {
     __db.beginTransaction();
     try {
       __insertionAdapterOfTreatmentStep.insert(treatmentStep);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void updateTreatmentSteps(TreatmentStep... treatmentStep) {
+    __db.beginTransaction();
+    try {
+      __updateAdapterOfTreatmentStep.handleMultiple(treatmentStep);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();

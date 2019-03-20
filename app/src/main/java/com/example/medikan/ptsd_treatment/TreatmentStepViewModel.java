@@ -37,4 +37,6 @@ public class TreatmentStepViewModel extends AndroidViewModel {
     }
 
     public void insert(TreatmentStep treatmentStep) {mRepository.insert(treatmentStep);}
+
+    public void update(TreatmentStep treatmentStep) {mRepository.update(treatmentStep);}
 }

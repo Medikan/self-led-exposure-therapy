@@ -27,6 +27,7 @@ public class DisplayTimerActivity extends AppCompatActivity {
     private TextView countdownTimer, title, description;
     private CountDownTimer timer;
     private int timerValue;
+    private TreatmentStep mTreatmentStep;
     private TreatmentStepViewModel mTreatmentStepViewModel;
 
     @Override
@@ -51,6 +52,9 @@ public class DisplayTimerActivity extends AppCompatActivity {
         mTreatmentStepViewModel.getTreatmentStep(treatmentStepID).observe(this, new Observer<TreatmentStep>() {
             @Override
             public void onChanged(@Nullable TreatmentStep treatmentStep) {
+
+                mTreatmentStep = treatmentStep;
+
                 title.setText(treatmentStep.getTreatmentStep());
                 description.setText(treatmentStep.getShortInstruction());
 
@@ -114,6 +118,9 @@ public class DisplayTimerActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
+
+                mTreatmentStep.setIsComplete(true);
+                mTreatmentStepViewModel.update(mTreatmentStep);
                 Intent intent = new Intent(context, TreatmentCompletionPage.class);
                 startActivity(intent);
             }

@@ -49,15 +49,24 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
         holder.treatmentNameTextView.setText(mDataset.get(position).getTreatmentStep());
         holder.treatmentDescriptionTextView.setText(mDataset.get(position).getDescription());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        if (mDataset.get(position).getIsComplete()) {
+            //TODO add something to show completion
+        }
+        else if (position == 0 || mDataset.get(position - 1).getIsComplete()) {
 
-                Intent intent = new Intent(mContext, mClass);
-                intent.putExtra("treatmentStepID", mDataset.get(position).getTreatmentStepID());
-                mContext.startActivity(intent);
-            }
-        });
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(mContext, mClass);
+                    intent.putExtra("treatmentStepID", mDataset.get(position).getTreatmentStepID());
+                    mContext.startActivity(intent);
+                }
+            });
+        }
+        else {
+            //TODO add something to show not complete but not 'unlocked' yet (b/c you need to do the previous treatment step)
+        }
     }
 
     @Override
