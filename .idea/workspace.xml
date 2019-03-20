@@ -17,7 +17,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95f14df8-c5e5-488d-a15e-4d2aa2343902" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -27,110 +26,64 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/build-info/debug/build-info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/AppDatabaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/DisplayTimerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/PopulateDbAsync.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/PopulateDbAsync.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/medikan/ptsd_treatment/TreatmentViewModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/AppDatabaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/DisplayTimerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/PopulateDbAsync.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/PopulateDbAsync.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/medikan/ptsd_treatment/TreatmentViewModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_9.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/AppDatabaseRepository.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/DisplayTimerActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/PopulateDbAsync.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/PopulateDbAsync.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStep.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStep.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentDao.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentDao.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentViewModel.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/36/com/example/medikan/ptsd_treatment/TreatmentViewModel.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$insertAsyncTaskTreatmentStep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository$updateAsyncTaskTreatmentStep.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/AppDatabaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/DisplayTimerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/PopulateDbAsync.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/PopulateDbAsync.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepDao_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentCompletionPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentDao_Impl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/0/com/example/medikan/ptsd_treatment/TreatmentViewModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppDatabaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppDatabaseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/PopulateDbAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/PopulateDbAsync.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -158,11 +111,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AllTreatmentsRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllTreatmentsRecyclerViewAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentCompletionPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+              <folding>
+                <element signature="e#2207#2384#0" expanded="true" />
+                <element signature="e#2383#2384#0" expanded="true" />
+                <element signature="e#2271#2629#0" expanded="true" />
+                <element signature="e#2628#2629#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentStepViewModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreatmentViewModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DisplayTimerActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+            <state relative-caret-position="1560">
+              <caret line="123" column="83" selection-start-line="123" selection-start-column="83" selection-end-line="123" selection-end-column="83" />
+              <folding>
+                <element signature="e#1914#2597#0" expanded="true" />
+                <element signature="e#2596#2597#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,18 +186,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllStepsRecyclerViewAdapter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2488,7 +2481,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_available_steps_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_treatment_description_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_treatment_completion_page.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_motivation_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
@@ -2511,18 +2503,19 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AvailableStepsPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppRoomDatabase.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDescriptionPage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/Treatment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AvailableTreatmentsPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllTreatmentsRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStep.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppDatabaseRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/PopulateDbAsync.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDao.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java" />
       </list>
     </option>
   </component>
@@ -2880,13 +2873,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/MotivationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -3017,13 +3003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TestCompletedPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_available_steps_page.xml">
       <provider editor-type-id="text-editor">
         <state />
@@ -3114,13 +3093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllTreatmentsRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AvailableTreatmentsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -3148,57 +3120,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDao.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/PopulateDbAsync.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="84">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppDatabaseRepository.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="127" column="58" lean-forward="true" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
+        <state relative-caret-position="332">
+          <caret line="52" column="51" lean-forward="true" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="88" lean-forward="true" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AvailableStepsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -3212,22 +3150,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/PopulateDbAsync.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TestCompletedPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="195">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AvailableStepsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllTreatmentsRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AllStepsRecyclerViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/AppDatabaseRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="446">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/DisplayTimerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="123" column="83" selection-start-line="123" selection-start-column="83" selection-end-line="123" selection-end-column="83" />
+          <folding>
+            <element signature="e#1914#2597#0" expanded="true" />
+            <element signature="e#2596#2597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentStepViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/medikan/ptsd_treatment/TreatmentCompletionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+          <folding>
+            <element signature="e#2207#2384#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+            <element signature="e#2271#2629#0" expanded="true" />
+            <element signature="e#2628#2629#0" expanded="true" />
           </folding>
         </state>
       </provider>

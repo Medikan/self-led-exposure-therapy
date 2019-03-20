@@ -286,4 +286,75 @@ public class TreatmentDao_Impl implements TreatmentDao {
       }
     }.getLiveData();
   }
+
+  @Override
+  public LiveData<Treatment> getSpecificTreatment(int treatmentID) {
+    final String _sql = "SELECT * FROM treatment_table WHERE mTreatmentID = (?)";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, treatmentID);
+    return new ComputableLiveData<Treatment>() {
+      private Observer _observer;
+
+      @Override
+      protected Treatment compute() {
+        if (_observer == null) {
+          _observer = new Observer("treatment_table") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfMTreatmentID = _cursor.getColumnIndexOrThrow("mTreatmentID");
+          final int _cursorIndexOfMTreatment = _cursor.getColumnIndexOrThrow("treatment");
+          final int _cursorIndexOfMDescription = _cursor.getColumnIndexOrThrow("description");
+          final int _cursorIndexOfMIsComplete = _cursor.getColumnIndexOrThrow("isComplete");
+          final int _cursorIndexOfMIsRequired = _cursor.getColumnIndexOrThrow("isRequired");
+          final int _cursorIndexOfMPriorityLevel = _cursor.getColumnIndexOrThrow("priorityLevel");
+          final Treatment _result;
+          if(_cursor.moveToFirst()) {
+            final int _tmpMTreatmentID;
+            _tmpMTreatmentID = _cursor.getInt(_cursorIndexOfMTreatmentID);
+            final String _tmpMTreatment;
+            _tmpMTreatment = _cursor.getString(_cursorIndexOfMTreatment);
+            final String _tmpMDescription;
+            _tmpMDescription = _cursor.getString(_cursorIndexOfMDescription);
+            final Boolean _tmpMIsComplete;
+            final Integer _tmp;
+            if (_cursor.isNull(_cursorIndexOfMIsComplete)) {
+              _tmp = null;
+            } else {
+              _tmp = _cursor.getInt(_cursorIndexOfMIsComplete);
+            }
+            _tmpMIsComplete = _tmp == null ? null : _tmp != 0;
+            final Boolean _tmpMIsRequired;
+            final Integer _tmp_1;
+            if (_cursor.isNull(_cursorIndexOfMIsRequired)) {
+              _tmp_1 = null;
+            } else {
+              _tmp_1 = _cursor.getInt(_cursorIndexOfMIsRequired);
+            }
+            _tmpMIsRequired = _tmp_1 == null ? null : _tmp_1 != 0;
+            final double _tmpMPriorityLevel;
+            _tmpMPriorityLevel = _cursor.getDouble(_cursorIndexOfMPriorityLevel);
+            _result = new Treatment(_tmpMTreatmentID,_tmpMTreatment,_tmpMDescription,_tmpMIsComplete,_tmpMIsRequired,_tmpMPriorityLevel);
+          } else {
+            _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
 }

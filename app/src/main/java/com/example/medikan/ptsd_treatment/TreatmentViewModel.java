@@ -11,6 +11,7 @@ public class TreatmentViewModel extends AndroidViewModel {
 
     private AppDatabaseRepository mRepository;
     private LiveData<List<Treatment>> mAllTreatments, mAllRequiredTreatments;
+    private LiveData<Treatment> mSpecficTreatment;
 
     public TreatmentViewModel(@NonNull Application application) {
         super(application);
@@ -22,6 +23,12 @@ public class TreatmentViewModel extends AndroidViewModel {
     LiveData<List<Treatment>> getAllTreatments() {return mAllTreatments;}
 
     LiveData<List<Treatment>> getAllRequiredTreatments() {return mAllRequiredTreatments;}
+
+    LiveData<Treatment> getSpecificTreatment(int treatmentID) {
+
+        mSpecficTreatment = mRepository.getSpecificTreatment(treatmentID);
+        return mSpecficTreatment;
+    }
 
     public void insert(Treatment treatment) {mRepository.insert(treatment);}
 

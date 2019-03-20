@@ -23,6 +23,9 @@ public interface TreatmentDao {
     @Query("SELECT * FROM treatment_table WHERE isRequired ORDER BY isComplete ASC, priorityLevel DESC")
     LiveData<List<Treatment>> getAllRequiredTreatments();
 
+    @Query("SELECT * FROM treatment_table WHERE mTreatmentID = (:treatmentID)")
+    LiveData<Treatment> getSpecificTreatment(int treatmentID);
+
     @Update
     void updateTreatments(Treatment... treatments);
 }

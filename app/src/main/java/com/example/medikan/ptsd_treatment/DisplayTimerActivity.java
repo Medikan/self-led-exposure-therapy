@@ -122,6 +122,7 @@ public class DisplayTimerActivity extends AppCompatActivity {
                 mTreatmentStep.setIsComplete(true);
                 mTreatmentStepViewModel.update(mTreatmentStep);
                 Intent intent = new Intent(context, TreatmentCompletionPage.class);
+                intent.putExtra("treatmentID", mTreatmentStep.getTreatmentID());
                 startActivity(intent);
             }
         };
