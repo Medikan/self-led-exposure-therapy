@@ -54,8 +54,8 @@ public class TreatmentDescriptionPage extends AppCompatActivity {
         mTreatmentStepViewModel.getTreatmentStep(treatmentStepID).observe(this, new Observer<TreatmentStep>() {
             @Override
             public void onChanged(@Nullable TreatmentStep treatmentStep) {
-                title.setText(treatmentStep.getTreatmentStep());
-                description.setText(treatmentStep.getLongInstruction());
+                title.setText(getResources().getString(getResources().getIdentifier(treatmentStep.getTreatmentStep(), "string", "com.example.medikan.ptsd_treatment")));
+                description.setText(getResources().getString(getResources().getIdentifier(treatmentStep.getLongInstruction(), "string", "com.example.medikan.ptsd_treatment")));
 
                 intent.putExtra("treatmentStepID", treatmentStep.getTreatmentStepID());
             }

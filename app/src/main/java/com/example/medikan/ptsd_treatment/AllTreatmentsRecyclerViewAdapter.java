@@ -55,8 +55,8 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
     @Override
     public void onBindViewHolder(AllTreatmentsRecyclerViewAdapter.MyViewHolder holder, final int position) {
 
-        holder.treatmentNameTextView.setText(mDataset.get(position).getTreatment());
-        holder.treatmentDescriptionTextView.setText(mDataset.get(position).getDescription());
+        holder.treatmentNameTextView.setText(mContext.getResources().getString(mContext.getResources().getIdentifier(mDataset.get(position).getTreatment(), "string", "com.example.medikan.ptsd_treatment")));
+        holder.treatmentDescriptionTextView.setText(mContext.getResources().getString(mContext.getResources().getIdentifier(mDataset.get(position).getDescription(), "string", "com.example.medikan.ptsd_treatment")));
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

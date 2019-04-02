@@ -46,8 +46,8 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
     @Override
     public void onBindViewHolder(AllStepsRecyclerViewAdapter.MyViewHolder holder, final int position) {
 
-        holder.treatmentNameTextView.setText(mDataset.get(position).getTreatmentStep());
-        holder.treatmentDescriptionTextView.setText(mDataset.get(position).getDescription());
+        holder.treatmentNameTextView.setText(mContext.getResources().getString(mContext.getResources().getIdentifier(mDataset.get(position).getTreatmentStep(), "string", "com.example.medikan.ptsd_treatment")));
+        holder.treatmentDescriptionTextView.setText(mContext.getResources().getString(mContext.getResources().getIdentifier(mDataset.get(position).getDescription(), "string", "com.example.medikan.ptsd_treatment")));
 
         if (mDataset.get(position).getIsComplete()) {
             //TODO add something to show completion

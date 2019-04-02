@@ -26,4 +26,61 @@
     <string name="test_completed_page_title">All Done!</string>
     <string name="test_completed_page_description">Good job completing the test! Here\'s some lorem ipsum text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</string>
     <string name="back_to_home_btn">Back To Home</string>
+
+    <!-- Treatment Localizations Strings -->
+    <string name="treatment_1_name">Test Treatment 1</string>
+    <string name="treatment_1_description">Description for test treatment 1</string>
+
+    <string name="treatment_1_step_1_name">Treatment 1 Step 1</string>
+    <string name="treatment_1_step_1_description">The first step for the first treatment</string>
+    <string name="treatment_1_step_1_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_1_step_1_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_1_step_2_name">Treatment 1 Step 2</string>
+    <string name="treatment_1_step_2_description">The second step for the first treatment</string>
+    <string name="treatment_1_step_2_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_1_step_2_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_1_step_3_name">Treatment 1 Step 3</string>
+    <string name="treatment_1_step_3_description">The third step for the first treatment</string>
+    <string name="treatment_1_step_3_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_1_step_3_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_2_name">Test Treatment 2</string>
+    <string name="treatment_2_description">Description for test treatment 2</string>
+
+    <string name="treatment_2_step_1_name">Treatment 2 Step 1</string>
+    <string name="treatment_2_step_1_description">The first step for the second treatment</string>
+    <string name="treatment_2_step_1_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_2_step_1_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_2_step_2_name">Treatment 2 Step 2</string>
+    <string name="treatment_2_step_2_description">The second step for the second treatment</string>
+    <string name="treatment_2_step_2_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_2_step_2_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_2_step_3_name">Treatment 2 Step 3</string>
+    <string name="treatment_2_step_3_description">The third step for the second treatment</string>
+    <string name="treatment_2_step_3_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_2_step_3_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_3_name">Test Treatment 3</string>
+    <string name="treatment_3_description">Description for test treatment 3</string>
+
+    <string name="treatment_3_step_1_name">Treatment 3 Step 1</string>
+    <string name="treatment_3_step_1_description">The first step for the third treatment</string>
+    <string name="treatment_3_step_1_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_3_step_1_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_3_step_2_name">Treatment 3 Step 2</string>
+    <string name="treatment_3_step_2_description">The second step for the third treatment</string>
+    <string name="treatment_3_step_2_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_3_step_2_short_instruction">Short set of instructions for treatment timer page</string>
+
+    <string name="treatment_3_step_3_name">Treatment 3 Step 3</string>
+    <string name="treatment_3_step_3_description">The third step for the third treatment</string>
+    <string name="treatment_3_step_3_long_instruction">Long set of instructions for treatment description page</string>
+    <string name="treatment_3_step_3_short_instruction">Short set of instructions for treatment timer page</string>
+    <!-- End treatment Localization Strings -->
+
 </resources>
