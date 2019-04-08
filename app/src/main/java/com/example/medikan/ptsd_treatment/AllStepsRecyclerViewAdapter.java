@@ -49,20 +49,20 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
         holder.treatmentNameTextView.setText(mContext.getResources().getString(mContext.getResources().getIdentifier(mDataset.get(position).getTreatmentStep(), "string", "com.example.medikan.ptsd_treatment")));
         holder.treatmentDescriptionTextView.setText(mContext.getResources().getString(mContext.getResources().getIdentifier(mDataset.get(position).getDescription(), "string", "com.example.medikan.ptsd_treatment")));
 
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mContext, mClass);
+                intent.putExtra("treatmentStepID", mDataset.get(position).getTreatmentStepID());
+                mContext.startActivity(intent);
+            }
+        });
+
+
         if (mDataset.get(position).getIsComplete()) {
             //TODO add something to show completion
-        }
-        else if (position == 0 || mDataset.get(position - 1).getIsComplete()) {
-
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    Intent intent = new Intent(mContext, mClass);
-                    intent.putExtra("treatmentStepID", mDataset.get(position).getTreatmentStepID());
-                    mContext.startActivity(intent);
-                }
-            });
         }
         else {
             //TODO add something to show not complete but not 'unlocked' yet (b/c you need to do the previous treatment step)
