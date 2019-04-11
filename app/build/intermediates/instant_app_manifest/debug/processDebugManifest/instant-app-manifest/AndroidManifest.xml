@@ -25,21 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.medikan.ptsd_treatment.DisplayTimerActivity"
-            android:parentActivityName="com.example.medikan.ptsd_treatment.TreatmentDescriptionPage" >
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TreatmentDescriptionPage" />
+        <activity android:name="com.example.medikan.ptsd_treatment.DisplayTimerActivity" >
         </activity>
         <activity
             android:name="com.example.medikan.ptsd_treatment.TreatmentDescriptionPage"
             android:label="@string/title_activity_treatment_description_page" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AvailableStepsPage" />
         </activity>
         <activity android:name="com.example.medikan.ptsd_treatment.AvailableTreatmentsPage" >
             <meta-data

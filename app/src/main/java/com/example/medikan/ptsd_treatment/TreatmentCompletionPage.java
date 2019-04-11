@@ -61,19 +61,7 @@ public class TreatmentCompletionPage extends AppCompatActivity {
 
         checkTreatmentSteps();
 
-        //if all steps are complete, updates treatment to complete
-        if (areAllComplete) {
-
-            mTreatmentViewModel.getSpecificTreatment(treatmentID).observe(this, new Observer<Treatment>() {
-                @Override
-                public void onChanged(@Nullable Treatment treatment) {
-
-                    treatment.setIsComplete(true);
-
-                    mTreatmentViewModel.update(treatment);
-                }
-            });
-        }
+        checkUpdateTreatment();
     }
 
     /**
@@ -90,6 +78,24 @@ public class TreatmentCompletionPage extends AppCompatActivity {
                     if (!treatmentStep.getIsComplete()) {
                         areAllComplete = false;
                     }
+                }
+            }
+        });
+    }
+
+    /**
+     * Checks if all steps have been completed, then updates the treatment to show completion
+     */
+    private void checkUpdateTreatment() {
+        mTreatmentViewModel.getSpecificTreatment(treatmentID).observe(this, new Observer<Treatment>() {
+            @Override
+            public void onChanged(@Nullable Treatment treatment) {
+
+                if (areAllComplete) {
+
+                    treatment.setIsComplete(true);
+
+                    mTreatmentViewModel.update(treatment);
                 }
             }
         });

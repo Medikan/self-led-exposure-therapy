@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
-INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
-INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
-INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
 MERGED from [com.android.support:design:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/65495788688eb366b047fd8012cbd350/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/efd98cabc614117b934937d164dd9c6a/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/medikan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/32787574b5290041d5c93c685ff18bc4/AndroidManifest.xml:2:1-11:12
@@ -26,25 +26,25 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/medikan/
 MERGED from [com.android.support:support-compat:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/109e29e5b39f106d2927115dbc2e8582/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7f891b504bc8a234916d4a97409c97d2/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/medikan/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/04546e10871c75168317a06627b48a6c/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
-INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
-INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-77:12
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:1-68:12
 		INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:5:5-75:19
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:5:5-66:19
 MERGED from [com.android.support:design:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/65495788688eb366b047fd8012cbd350/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/65495788688eb366b047fd8012cbd350/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/medikan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/efd98cabc614117b934937d164dd9c6a/AndroidManifest.xml:25:5-29:19
@@ -100,57 +100,55 @@ ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/Andro
 	android:name
 		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.example.medikan.ptsd_treatment.DisplayTimerActivity
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:19:9-27:20
-	android:parentActivityName
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:21:13-67
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:19:9-21:20
 	android:name
 		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:20:13-49
-meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:24:13-26:61
-	android:value
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:26:17-58
-	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:25:17-63
 activity#com.example.medikan.ptsd_treatment.TreatmentDescriptionPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:28:9-34:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:22:9-25:20
 	android:label
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:30:13-78
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:24:13-78
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:29:13-53
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:23:13-53
 activity#com.example.medikan.ptsd_treatment.AvailableTreatmentsPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:35:9-39:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:26:9-30:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:35:19-58
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:26:19-58
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:27:13-29:49
+	android:value
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:29:17-46
+	android:name
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:28:17-63
 meta-data#preloaded_fonts
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:41:9-43:57
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:32:9-34:57
 	android:resource
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:43:13-54
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:34:13-54
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:42:13-43
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:33:13-43
 activity#com.example.medikan.ptsd_treatment.AvailableStepsPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:45:9-49:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:36:9-40:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:45:19-53
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:36:19-53
 activity#com.example.medikan.ptsd_treatment.TreatmentCompletionPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:50:9-54:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:41:9-45:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:50:19-58
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:41:19-58
 activity#com.example.medikan.ptsd_treatment.MotivationPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:55:9-59:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:46:9-50:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:55:19-49
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:46:19-49
 activity#com.example.medikan.ptsd_treatment.TestInfoPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:60:9-64:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:51:9-55:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:60:19-47
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:51:19-47
 activity#com.example.medikan.ptsd_treatment.TestPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:65:9-69:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:56:9-60:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:65:19-43
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:56:19-43
 activity#com.example.medikan.ptsd_treatment.TestCompletedPage
-ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:70:9-74:20
+ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:61:9-65:20
 	android:name
-		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:70:19-52
+		ADDED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml:61:19-52
 uses-sdk
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/medikan/AndroidStudioProjects/PTSDTreatment/app/src/main/AndroidManifest.xml

@@ -764,6 +764,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_check_circle_filled
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable navigation_empty_icon
@@ -876,6 +877,7 @@ id info
 id italic
 id item_touch_helper_previous_elevation
 id largeLabel
+id layout_listitem_imageview
 id left
 id line1
 id line3

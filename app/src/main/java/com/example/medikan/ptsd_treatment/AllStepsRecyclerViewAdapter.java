@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -20,11 +21,13 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         public TextView treatmentNameTextView, treatmentDescriptionTextView;
+        public ImageView treatmentIsComplete;
         public MyViewHolder(View itemView) {
             super(itemView);
 
             treatmentNameTextView = itemView.findViewById(R.id.treatmentNameTextView);
             treatmentDescriptionTextView = itemView.findViewById(R.id.treatmentDescriptionTextView);
+            treatmentIsComplete = itemView.findViewById(R.id.layout_listitem_imageview);
         }
     }
 
@@ -62,7 +65,7 @@ public class AllStepsRecyclerViewAdapter extends RecyclerView.Adapter<AllStepsRe
 
 
         if (mDataset.get(position).getIsComplete()) {
-            //TODO add something to show completion
+            holder.treatmentIsComplete.setVisibility(View.VISIBLE);
         }
         else {
             //TODO add something to show not complete but not 'unlocked' yet (b/c you need to do the previous treatment step)
