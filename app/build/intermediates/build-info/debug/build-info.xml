@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="METHOD_ADDED"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.3.2"
-    timestamp="1555000406407"
+    timestamp="1555000621450"
     token="-4136878137902741151"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="5193" />
+        duration="4307" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="82" />
+        duration="153" />
     <task
         name="verifier"
-        duration="50" />
+        duration="131" />
 
     <artifact
         location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -112,8 +112,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_ADDED"
-        timestamp="1555000406407"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1555000621450"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/split-apk/debug/slices/slice_9.apk"

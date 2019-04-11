@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,11 +30,13 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         public TextView treatmentNameTextView, treatmentDescriptionTextView;
+        public ImageView treatmentIsComplete;
         public MyViewHolder(View itemView) {
             super(itemView);
 
             treatmentNameTextView = itemView.findViewById(R.id.treatmentNameTextView);
             treatmentDescriptionTextView = itemView.findViewById(R.id.treatmentDescriptionTextView);
+            treatmentIsComplete = itemView.findViewById(R.id.layout_listitem_imageview);
         }
     }
 
@@ -67,6 +70,10 @@ public class AllTreatmentsRecyclerViewAdapter extends Adapter<AllTreatmentsRecyc
                     mContext.startActivity(intent);
             }
         });
+
+        if (mDataset.get(position).getIsComplete()) {
+            holder.treatmentIsComplete.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
