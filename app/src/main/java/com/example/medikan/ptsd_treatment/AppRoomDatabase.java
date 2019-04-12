@@ -26,7 +26,7 @@ public abstract class AppRoomDatabase extends RoomDatabase {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             AppRoomDatabase.class, "app_database")
                             .addCallback(sRoomDatabaseCallback)
-                            .fallbackToDestructiveMigration()
+                            .fallbackToDestructiveMigration() //TODO don't use destructive migration
                             .build();
                 }
             }
@@ -39,8 +39,8 @@ public abstract class AppRoomDatabase extends RoomDatabase {
             new RoomDatabase.Callback(){
 
                 @Override
-                public void onOpen (@NonNull SupportSQLiteDatabase db){
-                    super.onOpen(db);
+                public void onCreate (@NonNull SupportSQLiteDatabase db){
+                    super.onCreate(db);
                     new PopulateDbAsync(INSTANCE).execute();
                 }
             };
