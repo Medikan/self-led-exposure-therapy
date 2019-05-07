@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Fri Apr 26 11:31:10 PDT 2019
-0.baseType=DIRECTORY
-0.base=/Users/medikan/AndroidStudioProjects/PTSDTreatment/app/build/intermediates/dex/debug/mergeDexDebug/out
-0.path=classes.dex
-0.set=DEX
-count=1
