@@ -10,11 +10,13 @@ public class AppDatabaseRepository {
 
     private TreatmentDao mTreatmentDao;
     private TreatmentStepDao mTreatmentStepDao;
+    private TestQuestionDao mTestQuestionDao;
     private LiveData<List<Treatment>> mAllTreatments, mAllRequiredTreatments;
     private LiveData<Treatment> mSpecificTreatment;
     private LiveData<List<TreatmentStep>> mAllTreatmentSteps;
     private LiveData<List<TreatmentStep>> mSpecificTreatmentSteps;
     private LiveData<TreatmentStep> mTreatmentStep;
+    private LiveData<List<TestQuestion>> mTestQuestions;
 
     private AppRoomDatabase db;
 
@@ -23,9 +25,11 @@ public class AppDatabaseRepository {
         db = AppRoomDatabase.getDatabase(application);
         mTreatmentDao = db.treatmentDao();
         mTreatmentStepDao = db.treatmentStepsDao();
+        mTestQuestionDao = db.testQuestionDao();
         mAllTreatments = mTreatmentDao.getAllTreatments();
         mAllRequiredTreatments = mTreatmentDao.getAllRequiredTreatments();
         mAllTreatmentSteps = mTreatmentStepDao.getAllTreatmentSteps();
+        mTestQuestions = mTestQuestionDao.getAllTestQuestions();
     }
 
     LiveData<List<Treatment>> getAllTreatments() {
@@ -53,6 +57,8 @@ public class AppDatabaseRepository {
         return mSpecificTreatmentSteps;
     }
 
+    LiveData<List<TestQuestion>> getAllTestQuestions() { return mTestQuestions; }
+
     LiveData<TreatmentStep> getTreatmentStep(int treatmentStepID) {
 
         mTreatmentStep = db.treatmentStepsDao().getTreatmentStep(treatmentStepID);
@@ -78,6 +84,16 @@ public class AppDatabaseRepository {
     public void update(TreatmentStep treatmentStep) {
 
         new updateAsyncTaskTreatmentStep(mTreatmentStepDao).execute(treatmentStep);
+    }
+
+    public void insert (TestQuestion testQuestion) {
+
+        new insertAsyncTaskTestQuestion(mTestQuestionDao).execute(testQuestion);
+    }
+
+    public void update (TestQuestion testQuestion) {
+
+        new updateAsyncTaskTestQuestion(mTestQuestionDao).execute(testQuestion);
     }
 
     private static class insertAsyncTask extends AsyncTask<Treatment, Void, Void> {
@@ -110,6 +126,21 @@ public class AppDatabaseRepository {
         }
     }
 
+    private static class insertAsyncTaskTestQuestion extends AsyncTask<TestQuestion, Void, Void> {
+
+        private TestQuestionDao mTestQuestionDao;
+
+        insertAsyncTaskTestQuestion(TestQuestionDao dao) {
+            mTestQuestionDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(final TestQuestion... params) {
+            mTestQuestionDao.insert(params[0]);
+            return null;
+        }
+    }
+
     private static class updateAsyncTaskTreatment extends AsyncTask<Treatment, Void, Void> {
 
         private TreatmentDao mAsyncTaskDao;
@@ -134,6 +165,21 @@ public class AppDatabaseRepository {
         protected Void doInBackground(final TreatmentStep... params) {
 
             mAsyncTaskDao.updateTreatmentSteps(params[0]);
+            return null;
+        }
+    }
+
+    private static class updateAsyncTaskTestQuestion extends AsyncTask<TestQuestion, Void, Void> {
+
+        private TestQuestionDao mTestQuestionDao;
+
+        updateAsyncTaskTestQuestion(TestQuestionDao dao) {
+            mTestQuestionDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(final TestQuestion... params) {
+            mTestQuestionDao.updateTestQuestions(params[0]);
             return null;
         }
     }

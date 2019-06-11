@@ -6,17 +6,22 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.util.Log;
 
-@Database(entities = {Treatment.class, TreatmentStep.class}, version = 6)
+@Database(entities = {Treatment.class, TreatmentStep.class, TestQuestion.class}, version = 10)
 public abstract class AppRoomDatabase extends RoomDatabase {
     public abstract TreatmentDao treatmentDao();
     public abstract TreatmentStepDao treatmentStepsDao();
+    public abstract TestQuestionDao testQuestionDao();
 
 
     //Makes sure there's only one instance of the db running
     private static volatile AppRoomDatabase INSTANCE;
 
     static AppRoomDatabase getDatabase(final Context context) {
+
+
+        Log.i("My Log", "Accessing Database!");
 
         if (INSTANCE == null) {
             synchronized (AppRoomDatabase.class) {
@@ -41,6 +46,9 @@ public abstract class AppRoomDatabase extends RoomDatabase {
                 @Override
                 public void onCreate (@NonNull SupportSQLiteDatabase db){
                     super.onCreate(db);
+
+                    Log.i("My Log", "Ran onCreate for Db");
+
                     new PopulateDbAsync(INSTANCE).execute();
                 }
             };

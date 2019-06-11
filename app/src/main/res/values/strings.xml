@@ -81,6 +81,7 @@
     <string name="treatment_3_step_3_description">The third step for the third treatment</string>
     <string name="treatment_3_step_3_long_instruction">Long set of instructions for treatment description page</string>
     <string name="treatment_3_step_3_short_instruction">Short set of instructions for treatment timer page</string>
+    <string name="test_question_headline_test">Question Number Something</string>
     <!-- End treatment Localization Strings -->
 
 </resources>
