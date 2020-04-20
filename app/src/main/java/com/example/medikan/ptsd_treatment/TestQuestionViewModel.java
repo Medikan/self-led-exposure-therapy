@@ -11,6 +11,7 @@ public class TestQuestionViewModel extends AndroidViewModel {
 
     private AppDatabaseRepository mRepository;
     private LiveData<List<TestQuestion>> mAllTestQuestions;
+    private LiveData<TestQuestion> mTestQuestion;
 
     public TestQuestionViewModel(@NonNull Application application) {
         super(application);
@@ -18,7 +19,14 @@ public class TestQuestionViewModel extends AndroidViewModel {
         mAllTestQuestions = mRepository.getAllTestQuestions();
     }
 
-    LiveData<List<TestQuestion>> getAllTreatmentSteps() {return mAllTestQuestions;}
+    LiveData<List<TestQuestion>> getAllTestQuestions() {return mAllTestQuestions;}
+
+    LiveData<TestQuestion> getTestQuestion(int testQuestionID) {
+
+        mTestQuestion = mRepository.getTestQuestion(testQuestionID);
+
+        return mTestQuestion;
+    }
 
     public void insert(TestQuestion testQuestion) {mRepository.insert(testQuestion);}
 

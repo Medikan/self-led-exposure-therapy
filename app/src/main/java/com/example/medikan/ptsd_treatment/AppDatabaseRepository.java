@@ -17,6 +17,7 @@ public class AppDatabaseRepository {
     private LiveData<List<TreatmentStep>> mSpecificTreatmentSteps;
     private LiveData<TreatmentStep> mTreatmentStep;
     private LiveData<List<TestQuestion>> mTestQuestions;
+    private LiveData<TestQuestion> mTestQuestion;
 
     private AppRoomDatabase db;
 
@@ -58,6 +59,13 @@ public class AppDatabaseRepository {
     }
 
     LiveData<List<TestQuestion>> getAllTestQuestions() { return mTestQuestions; }
+
+    LiveData<TestQuestion> getTestQuestion(int testQuestionID) {
+
+        mTestQuestion = db.testQuestionDao().getTestQuestion((testQuestionID));
+
+        return mTestQuestion;
+    }
 
     LiveData<TreatmentStep> getTreatmentStep(int treatmentStepID) {
 

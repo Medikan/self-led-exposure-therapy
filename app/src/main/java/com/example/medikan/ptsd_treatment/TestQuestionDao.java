@@ -20,6 +20,9 @@ public interface TestQuestionDao {
     @Query("SELECT * FROM test_question_table ORDER BY mQuestionID ASC")
     LiveData<List<TestQuestion>> getAllTestQuestions();
 
+    @Query("SELECT * FROM TEST_QUESTION_TABLE WHERE mQuestionID = (:testQuestionID)")
+    LiveData<TestQuestion> getTestQuestion(int testQuestionID);
+
     @Update
     void updateTestQuestions(TestQuestion... testQuestions);
 }
