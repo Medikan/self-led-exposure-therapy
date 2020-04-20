@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void navigateToTestInfoPage(View view) {
-        Intent intent = new Intent(this, TestInfoPage.class);
+    public void navigateToRationalePage(View view) {
+        Intent intent = new Intent(this, RationalePage.class);
         startActivity(intent);
     }
 }

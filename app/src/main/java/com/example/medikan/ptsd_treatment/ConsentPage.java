@@ -5,16 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class TestCompletedPage extends AppCompatActivity {
+public class ConsentPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_completed_page);
+        setContentView(R.layout.activity_consent_page);
     }
 
-    public void navigateToLongerRationalePage(View view) {
-        Intent intent = new Intent(this, LongerRationalePage.class);
+    public void navigateToTestInfoPage(View view) {
+        Intent intent = new Intent(this, TestInfoPage.class);
         startActivity(intent);
     }
 }
