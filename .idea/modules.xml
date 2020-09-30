@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PTSDTreatment.iml" filepath="$PROJECT_DIR$/PTSDTreatment.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/self-led-exposure-therapy.iml" filepath="$PROJECT_DIR$/self-led-exposure-therapy.iml" group="self-led-exposure-therapy" />
+      <module fileurl="file://$PROJECT_DIR$/app/self-led-exposure-therapy-app.iml" filepath="$PROJECT_DIR$/app/self-led-exposure-therapy-app.iml" group="self-led-exposure-therapy/app" />
     </modules>
   </component>
 </project>
