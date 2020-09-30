@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -16,10 +17,11 @@ import java.util.List;
 public class TestPage extends AppCompatActivity {
 
     public TextView testQuestionHeaderText, testQuestionText;
-    public RatingBar testQuestionRatingBar;
+    public RadioGroup testQuestionAnswers;
 
     private TestQuestionViewModel mTestQuestionViewModel;
-    private LiveData<List<TestQuestion>> testQuestions;
+    private List<TestQuestion> mTestQuestions;
+    private int questionIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,20 +30,37 @@ public class TestPage extends AppCompatActivity {
 
         testQuestionHeaderText = (TextView) findViewById(R.id.testQuestionHeading);
         testQuestionText = (TextView) findViewById((R.id.testQuestion));
-        testQuestionRatingBar = (RatingBar) findViewById(R.id.testRatingBar);
+        testQuestionAnswers = (RadioGroup) findViewById(R.id.radioGroupTestAnswers);
 
-        populateTestQuestions();
-        setupText(1);
-    }
-
-    public void populateTestQuestions() {
         mTestQuestionViewModel = ViewModelProviders.of(this).get(TestQuestionViewModel.class);
-
-        testQuestions = mTestQuestionViewModel.getAllTestQuestions();
+        mTestQuestionViewModel.getAllTestQuestions().observe(this, new Observer<List<TestQuestion>>() {
+            @Override
+            public void onChanged(@Nullable List<TestQuestion> testQuestions) {
+                mTestQuestions = testQuestions;
+                setupText(questionIndex);
+            }
+        });
     }
 
     public void setupText(final int index) {
-        testQuestionHeaderText.setText((CharSequence) testQuestions.getValue());
+        testQuestionHeaderText.setText((CharSequence) mTestQuestions.get(index).getQuestion());
+    }
+
+    public void handleClick(View view) {
+        int testAnswerId = testQuestionAnswers.getCheckedRadioButtonId();
+        View checkedAnswer = testQuestionAnswers.findViewById(testAnswerId);
+        int index = testQuestionAnswers.indexOfChild(checkedAnswer);
+
+        mTestQuestions.get(questionIndex).setRating(index);
+        testQuestionAnswers.clearCheck();
+        if (questionIndex < mTestQuestions.size() - 1)
+        {
+            setupText(++questionIndex);
+        }
+        else
+        {
+            navigateToTestCompletedPage(view);
+        }
     }
 
     public void navigateToTestCompletedPage(View view) {
